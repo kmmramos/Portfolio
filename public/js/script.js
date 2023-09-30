@@ -1,6 +1,11 @@
+/**
+ * Filename: script.js
+ * Student Name: Kirstin Megga Ramos
+ * Student Number: 301363582
+ * Date: 2023-09-30
+ */
+
 'use strict';
-
-
 
 /**
  * Add eventListener on multiple elements

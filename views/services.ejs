@@ -1,3 +1,10 @@
+<!-- /**
+ * Filename: services.ejs
+ * Student Name: Kirstin Megga Ramos
+ * Student Number: 301363582
+ * Date: 2023-09-30
+ */ -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,59 +50,11 @@
     <div class="preloader-circle"></div>
   </div>
 
-
-
-
-
   <!-- 
     - #HEADER
   -->
-
-  <header class="header" data-header>
-    <div class="container">
-
-      <a href="./index.html" class="logo">
-        <img src="./img/logo ver5.svg" width="151" height="28" alt="Kirstin home">
-      </a>
-
-      <nav class="navbar" data-navbar>
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <a href="./" class="label-lg navbar-link has-after">Home</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="./about" class="label-lg navbar-link has-after">About</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="./services" class="label-lg navbar-link has-after active">Services</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="./projects" class="label-lg navbar-link has-after">Projects</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="./contact" class="label-lg navbar-link has-after">Contact</a>
-          </li>
-
-        </ul>
-      </nav>
-
-      <a href="./contact" class="btn btn-primary">Contact Now</a>
-
-      <button class="nav-toggle-btn" aria-label="menu" data-nav-toggler>
-        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-      </button>
-
-    </div>
-  </header>
-
-
-
-
+  <!-- Include the navigation section -->
+  <%- include('header.ejs') %>
 
   <main>
     <article>
@@ -236,30 +195,11 @@
 
 
 
-
-
   <!-- 
     - #FOOTER
   -->
-  <footer class="footer">
-    <div class="container">
-
-      <ul class="social-list">
-        <li>
-          <a href="https://www.linkedin.com/in/kmmramos/" class="social-link">
-            <ion-icon name="logo-linkedin"></ion-icon>
-          </a>
-        </li>
-
-      </ul>
-
-      <p class="text-center">&copy; 2022 copyright all right reserved</p>
-
-    </div>
-  </footer>
-
-
-
+  <!-- Include the footer section -->
+  <%- include('footer.ejs') %>
 
 
   <!-- 

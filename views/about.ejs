@@ -1,15 +1,9 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-</head>
-<body>
-    <h1><%= text %></h1>
-</body>
-</html> -->
+<!-- /**
+ * Filename: about.ejs
+ * Student Name: Kirstin Megga Ramos
+ * Student Number: 301363582
+ * Date: 2023-09-30
+ */ -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -61,60 +55,11 @@
     <div class="preloader-circle"></div>
   </div>
 
-
-
-
-
   <!-- 
     - #HEADER
   -->
-  <header class="header" data-header>
-    <div class="container">
-
-      <a href="#" class="logo">
-        <img src="./img/logo ver5.svg" width="151" height="28" alt="Kirstin logo placeholder">
-      </a>
-
-
-
-      <nav class="navbar" data-navbar>
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <a href="./" class="label-lg navbar-link has-after">Home</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#" class="label-lg navbar-link has-after active">About</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="./services" class="label-lg navbar-link has-after">Services</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="./projects" class="label-lg navbar-link has-after">Projects</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="./contact.ejs" class="label-lg navbar-link has-after">Contact</a>
-          </li>
-
-        </ul>
-      </nav>
-
-      <a href="./contact" class="btn btn-primary">Contact Now</a>
-
-      <button class="nav-toggle-btn" aria-label="menu" data-nav-toggler>
-        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-      </button>
-
-    </div>
-  </header>
-
-
-
-
+  <!-- Include the navigation section -->
+  <%- include('header.ejs') %>
 
   <main>
     <article>
@@ -135,14 +80,22 @@
             <h2 class="title-lg">I'm a Software Developer with over 6+ years of experience.</h2>
 
             <p class="body-md section-text">
-              I'm a Software Developer with over 6+ years of experience. I'm from Philippines. I develop .NET Core
+              My name is Kirstin Megga Ramos. I'm from Philippines and now residing in Canada. I develop .NET Core
               applications and web applications for various clients. I'm excited to work with new people. And I'm
               always ready to learn new things!
             </p>
 
+            <p class="body-md section-text">
+
+              Currently, I'm studying at Centennial College with the advance diploma, Artificial Intelligence 
+              Software Engineer Program. So you will see me creating my own AI application soon enough!
+            </p>
+
+            </li>
+
             <ul class="about-list">
 
-              <!-- <li>
+              <li>
                 <p class="list-text">
                   <strong class="strong title-md">50+</strong> Projet Completed
                 </p>
@@ -150,9 +103,9 @@
 
               <li>
                 <p class="list-text">
-                  <strong class="strong title-md">190+</strong> Happy Clients
+                  <strong class="strong title-md">50+</strong> Happy Clients
                 </p>
-              </li> -->
+              </li>
 
             </ul>
 
@@ -166,17 +119,7 @@
 
         </div>
       </section>
-      <!-- 
-        - #CTA
-      -->
 
-      <section class="cta">
-        <div class="container">
-          <h2 class="title-lg">Intrested working with me?</h2>
-
-          <a href="./contact" class="btn btn-tertiary">Contact Now</a>
-        </div>
-      </section>
 
     </article>
   </main>
@@ -188,22 +131,8 @@
   <!-- 
     - #FOOTER
   -->
-  <footer class="footer">
-    <div class="container">
-
-      <ul class="social-list">
-        <li>
-          <a href="https://www.linkedin.com/in/kmmramos/" class="social-link">
-            <ion-icon name="logo-linkedin"></ion-icon>
-          </a>
-        </li>
-
-      </ul>
-
-      <p class="text-center">&copy; 2022 copyright all right reserved</p>
-
-    </div>
-  </footer>
+  <!-- Include the footer section -->
+  <%- include('footer.ejs') %>
 
 
 
@@ -222,11 +151,3 @@
 </body>
 
 </html>
-
-
-
-
-<!-- <h1>Hello World</h1>
-<h2><%= text %></h2>
-<a href="/about">About Page</a>
-<img src="img/cat.jpg" alt="Cat"> -->
