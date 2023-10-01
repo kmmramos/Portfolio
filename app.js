@@ -45,15 +45,8 @@ app.post('/submit-contact', (req, res) => {
     const filePath = './public/docs/form_data.txt';
   
     // Write the JSON data to the file
-    fs.writeFile(filePath, formDataJson, (err) => {
-      if (err) {
-        console.error(err);
-        res.status(500).send('Error saving form data');
-      } else {
-        console.log('Form data saved to', filePath);
-        //res.status(200).send('Form data saved successfully');
+    fs.writeFile(filePath, formDataJson, () => {
         res.redirect('/'); 
-      }
     });
   });
 
