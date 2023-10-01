@@ -64,10 +64,10 @@
       -->
 
       <section class="section contact has-bg-image" aria-labelledby="contact-label"
-        style="background-image: url('./assets/images/contact-bg.png')">
+        style="background-image: url('./img/contact-bg.png')">
         <div class="container">
 
-          <form action="" class="contact-form">
+          <form  action="/submit-contact" method="POST"class="contact-form">
 
             <h2 class="headline-sm" id="contact-label">Get in touch</h2>
 
@@ -78,15 +78,15 @@
             <div class="wrapper">
 
               <div>
-                <label for="name" class="label">First name</label>
+                <label for="firstName" class="label">First name</label>
 
-                <input type="text" name="name" id="name" placeholder="First Name *" required class="input-field">
+                <input type="text" name="firstName" id="firstName" placeholder="First Name *" required class="input-field">
               </div>
 
               <div>
-                <label for="name" class="label">Last name</label>
+                <label for="lastName" class="label">Last name</label>
 
-                <input type="text" name="name" id="name" placeholder="Last Name *" required class="input-field">
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name *" required class="input-field">
               </div>
 
               <div>
@@ -109,7 +109,7 @@
             <label for="message" class="label">Your message </label>
             <textarea name="message" id="message" placeholder="Your message *" required class="input-field"></textarea>
 
-            <a href="./" class="btn btn-tertiary">Send Message</a>
+            <button type ="submit" class="btn btn-tertiary">Send Message</button>
 
           </form>
 
